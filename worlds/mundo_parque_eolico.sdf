@@ -1,0 +1,292 @@
+<sdf version='1.10'>
+  <world name='parque_eolico'>
+    <scene>
+      <grid>true</grid>
+      <sky/>
+      <ambient>0.400000006 0.400000006 0.400000006 1</ambient>
+      <background>0.5 0.699999988 0.899999976 1</background>
+      <shadows>true</shadows>
+    </scene>
+    <gravity>0 0 -9.8000000000000007</gravity>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <magnetic_field>5.5644999999999998e-06 2.2875799999999999e-05 -4.2388400000000002e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <model name='ground'>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>500 500</size>
+            </plane>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>500 500</size>
+            </plane>
+          </geometry>
+          <material>
+            <ambient>0.100000001 0.400000006 0.100000001 1</ambient>
+            <diffuse>0.200000003 0.550000012 0.200000003 1</diffuse>
+            <specular>0.0500000007 0.100000001 0.0500000007 1</specular>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <pose>0 0 0 0 0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aerogenerador_1'>
+      <pose>-150 -2.4535899999999999e-14 78 3.1352799999999998 0.016176400000000014 -1.4070199999999995</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>true</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aerogenerador_2'>
+      <pose>0 1.3877799999999999e-17 78 3.1296599999999999 0.0011849600000000027 -1.5589999999999999</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>true</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aerogenerador_3'>
+      <pose>150 0 78 -3.1335000000000002 -0.0069199300000000038 -1.63984</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>true</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aerogenerador_4'>
+      <pose>-75 120 78 3.1320899999999998 0.014657400000000001 -1.4241900000000001</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>true</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='aerogenerador_5'>
+      <pose>75 120 78 3.1268600000000002 -0.014012399999999993 -1.65723</pose>
+      <static>true</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>true</cast_shadows>
+          <geometry>
+            <mesh>
+              <scale>0.00035 0.00035 0.00035</scale>
+              <uri>file:///home/alondra/.gz/gazebo/models/NuevoMolino/meshes/NuevoMolino.STL</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <diffuse>1 1 1 1</diffuse>
+          </material>
+        </visual>
+        <pose>0 0 0 0 0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1.2000000476837158</intensity>
+      <direction>-0.5 0.5 -0.80000000000000004</direction>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>0.5 0.5 0.5 1</specular>
+      <attenuation>
+        <range>10</range>
+        <linear>1</linear>
+        <constant>1</constant>
+        <quadratic>0</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>
